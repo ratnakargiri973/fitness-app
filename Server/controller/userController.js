@@ -1,3 +1,4 @@
+
 import User from "../model/userModal.js";
 import mongoose from "mongoose";
 import jwt from 'jsonwebtoken';
@@ -164,4 +165,3 @@ export const updateUser = async (req, res) => {
     res.status(500).send({ message: 'Error in updating user', error });
   }
 };
-
